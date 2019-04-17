@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ageCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data de Nascimento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eld-8V-zHZ">
+                                <rect key="frame" x="0.0" y="64" width="414" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSd-TK-kf4">
+                                <rect key="frame" x="0.0" y="114" width="414" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Calcular Idade"/>
+                                <connections>
+                                    <action selector="actionButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRd-0g-bpD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGr-8Z-zwg">
+                                <rect key="frame" x="0.0" y="350" width="414" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eld-8V-zHZ" secondAttribute="trailing" id="2a5-JK-DN1"/>
+                            <constraint firstItem="nSd-TK-kf4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gfu-QI-Qbi"/>
+                            <constraint firstItem="mGr-8Z-zwg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JHG-Ow-Ugu"/>
+                            <constraint firstItem="nSd-TK-kf4" firstAttribute="top" secondItem="eld-8V-zHZ" secondAttribute="bottom" constant="20" id="QQh-fM-JNT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mGr-8Z-zwg" secondAttribute="trailing" id="Usp-Uz-Bis"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nSd-TK-kf4" secondAttribute="trailing" id="nBa-EN-kWX"/>
+                            <constraint firstItem="eld-8V-zHZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oRg-dh-rg9"/>
+                            <constraint firstItem="eld-8V-zHZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="trr-23-Vhd"/>
+                            <constraint firstItem="mGr-8Z-zwg" firstAttribute="top" secondItem="nSd-TK-kf4" secondAttribute="bottom" constant="200" id="vNS-NN-pOj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="mGr-8Z-zwg" id="0c8-3Z-E1V"/>
+                        <outlet property="birthdateTextField" destination="eld-8V-zHZ" id="bKv-ev-b07"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
